@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo de Conductores · RZ1-K</title>
+<title>Catálogo de Conductores</title>
 <style>
   :root {
     --brand: #E8500A;
@@ -722,9 +722,9 @@
   <div class="logo-box" onclick="clearAll(null)" style="cursor:pointer;" title="Volver al inicio"><span style="font-size:20px;line-height:1;">🔌</span></div>
   <div class="header-info">
     <h1>Catálogo de Conductores</h1>
-    <p>Códigos y descripciones · Categoría RZ1-K</p>
+    <p>Códigos y descripciones · RZ1-K, RV-K y H07Z1-K</p>
   </div>
-  <div class="header-count" id="header-count">31 productos</div>
+  <div class="header-count" id="header-count">102 productos</div>
   <button id="sug-btn-header" onclick="openSug()" style="background:rgba(255,255,255,0.15);border:none;border-radius:20px;padding:6px 14px;cursor:pointer;font-size:13px;font-weight:600;color:#fff;display:flex;align-items:center;gap:6px;transition:background 0.2s;white-space:nowrap;">📬 Sugerencias</button>
   <button id="tutorial-btn" onclick="startTutorial()">📖 Tutorial</button>
   <button id="dark-toggle" onclick="toggleDark()" title="Modo oscuro">🌙 Oscuro</button>
@@ -738,6 +738,9 @@
   <div class="pills" id="pills">
     <div class="pill active" onclick="clearAll(this)">Todos</div>
     <div class="pill" onclick="setFilter('RZ1-K',this)">RZ1-K</div>
+    <div class="pill" onclick="setFilter('RV-K',this)">RV-K</div>
+    <div class="pill" onclick="setFilter('H07Z1-K Rollo',this)">H07Z1-K Rollo</div>
+    <div class="pill" onclick="setFilter('H07Z1-K Carrete',this)">H07Z1-K Carrete</div>
   </div>
 </div>
 </div>
@@ -796,7 +799,7 @@
 </div>
 
 <div class="toast" id="toast">✓ Código copiado</div>
-<div id="footer-credit" style="text-align:center;padding:20px 0 14px;font-size:11px;font-weight:500;letter-spacing:1.5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#aaa;transition:color 0.3s;">✦ Catálogo de Conductores · RZ1-K ✦</div>
+<div id="footer-credit" style="text-align:center;padding:20px 0 14px;font-size:11px;font-weight:500;letter-spacing:1.5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#aaa;transition:color 0.3s;">✦ Catálogo de Conductores ✦</div>
 
 
 <script>
@@ -869,7 +872,78 @@ const P = [
   {"code":"15332871","catcode":"10012247","description":"Cable Libre de Halógenos 1x120mm² 0.6/1kV Negro","section":"RZ1-K","img":IMG_NEGRO,"ficha":FICHA_NEXANS_URL,"manual":CERT_50_1000_URL,"colorName":"Negro","colorHex":"#111827"},
   {"code":"15332971","catcode":"10012248","description":"Cable Libre de Halógenos 1x150mm² 0.6/1kV Negro","section":"RZ1-K","img":IMG_NEGRO,"ficha":FICHA_NEXANS_URL,"manual":CERT_50_1000_URL,"colorName":"Negro","colorHex":"#111827"},
   {"code":"15333271","catcode":"10023292","description":"Cable Libre de Halógenos 1x185mm² 0.6/1kV Negro","section":"RZ1-K","img":IMG_NEGRO,"ficha":FICHA_NEXANS_URL,"manual":CERT_50_1000_URL,"colorName":"Negro","colorHex":"#111827"},
-  {"code":"15333471","catcode":"10009598","description":"Cable Libre de Halógenos 1x240mm² 0.6/1kV Negro","section":"RZ1-K","img":IMG_NEGRO,"ficha":FICHA_NEXANS_URL,"manual":CERT_50_1000_URL,"colorName":"Negro","colorHex":"#111827"}
+  {"code":"15333471","catcode":"10009598","description":"Cable Libre de Halógenos 1x240mm² 0.6/1kV Negro","section":"RZ1-K","img":IMG_NEGRO,"ficha":FICHA_NEXANS_URL,"manual":CERT_50_1000_URL,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370171","catcode":"10003102-EX01-03","description":"Cable RV-K 1x14AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370271","catcode":"10003129-EX02-03","description":"Cable RV-K 1x12AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370371","catcode":"10003134-EX03-03","description":"Cable RV-K 1x10AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370471","catcode":"10003138-EX04-03","description":"Cable RV-K 1x8AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370571","catcode":"10003144-EX05-03","description":"Cable RV-K 1x6AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370671","catcode":"10003153-EX06-03","description":"Cable RV-K 1x4AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370771","catcode":"10003154-EX07-03","description":"Cable RV-K 1x3AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370871","catcode":"10003157-EX08-03","description":"Cable RV-K 1x2AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15370971","catcode":"10003161-EX09-03","description":"Cable RV-K 1x1AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371071","catcode":"10003163-EX10-03","description":"Cable RV-K 1x1/0AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371171","catcode":"10003166-EX11-03","description":"Cable RV-K 1x2/0AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371271","catcode":"10003167","description":"Cable RV-K 1x3/0AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371371","catcode":"10003170","description":"Cable RV-K 1x4/0AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371471","catcode":"10003172-EX14-03","description":"Cable RV-K 1x250MCM 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371671","catcode":"10003175-EX16-03","description":"Cable RV-K 1x350MCM 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15371971","catcode":"10003176-EX19-03","description":"Cable RV-K 1x500MCM 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15373171","catcode":"10003109","description":"Cable RV-K 3x14AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15373271","catcode":"10003128","description":"Cable RV-K 3x12AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15373371","catcode":"10003133","description":"Cable RV-K 3x10AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15373471","catcode":"10021291","description":"Cable RV-K 3x8AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15373501","catcode":"10003148","description":"Cable RV-K 3x6AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15395571","catcode":"10039554","description":"Cable RV-K 3x2AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374171","catcode":"10021255","description":"Cable RV-K 4x14AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374271","catcode":"10003125","description":"Cable RV-K 4x12AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374371","catcode":"10017183","description":"Cable RV-K 4x10AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374471","catcode":"10014494","description":"Cable RV-K 4x8AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374571","catcode":"10014495","description":"Cable RV-K 4x6AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374671","catcode":"10003152","description":"Cable RV-K 4x4AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15374871","catcode":"10014496","description":"Cable RV-K 4x2AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375071","catcode":"10003114","description":"Cable RV-K 5x16AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375171","catcode":"10022092","description":"Cable RV-K 5x14AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375271","catcode":"10048898","description":"Cable RV-K 5x12AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375771","catcode":"10018209","description":"Cable RV-K 5x8AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375571","catcode":"10003145","description":"Cable RV-K 5x6AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375471","catcode":"10054508","description":"Cable RV-K 5x4AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"15375371","catcode":"10048296","description":"Cable RV-K 5x2AWG 1kV Negro","section":"RV-K","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"35100171","catcode":"10022951-DU6002","description":"Cable Libre de Halógenos 1x1,5mm² 750V Rojo · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"35200171","catcode":"10022949-DU6005","description":"Cable Libre de Halógenos 1x1,5mm² 750V Azul · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"35300171","catcode":"10018008-DU6003","description":"Cable Libre de Halógenos 1x1,5mm² 750V Negro · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"35400171","catcode":"10022950-DU6001","description":"Cable Libre de Halógenos 1x1,5mm² 750V Blanco · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"35500171","catcode":"10022952-DU6004","description":"Cable Libre de Halógenos 1x1,5mm² 750V Verde · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"},
+  {"code":"M35100101","catcode":null,"description":"Cable Libre de Halógenos 1x1,5mm² 750V Rojo · Venta por metro","section":"H07Z1-K Carrete","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"M35200101","catcode":null,"description":"Cable Libre de Halógenos 1x1,5mm² 750V Azul · Venta por metro","section":"H07Z1-K Carrete","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"M35300101","catcode":null,"description":"Cable Libre de Halógenos 1x1,5mm² 750V Negro · Venta por metro","section":"H07Z1-K Carrete","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"M35400101","catcode":null,"description":"Cable Libre de Halógenos 1x1,5mm² 750V Blanco · Venta por metro","section":"H07Z1-K Carrete","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"M35500101","catcode":null,"description":"Cable Libre de Halógenos 1x1,5mm² 750V Verde · Venta por metro","section":"H07Z1-K Carrete","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"},
+  {"code":"35100271","catcode":"10023015-DU6102","description":"Cable Libre de Halógenos 1x2,5mm² 750V Rojo · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"35200271","catcode":"10023013-DU6105","description":"Cable Libre de Halógenos 1x2,5mm² 750V Azul · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"35300271","catcode":"10018009-DU6103","description":"Cable Libre de Halógenos 1x2,5mm² 750V Negro · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"35400271","catcode":"10023014-DU6101","description":"Cable Libre de Halógenos 1x2,5mm² 750V Blanco · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"35500271","catcode":null,"description":"Cable Libre de Halógenos 1x2,5mm² 750V Verde · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"},
+  {"code":"M35100201","catcode":null,"description":"Cable Libre de Halógenos 1x2,5mm² 750V Rojo · Venta por metro","section":"H07Z1-K Carrete","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"M35200201","catcode":null,"description":"Cable Libre de Halógenos 1x2,5mm² 750V Azul · Venta por metro","section":"H07Z1-K Carrete","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"M35300201","catcode":null,"description":"Cable Libre de Halógenos 1x2,5mm² 750V Negro · Venta por metro","section":"H07Z1-K Carrete","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"M35400201","catcode":null,"description":"Cable Libre de Halógenos 1x2,5mm² 750V Blanco · Venta por metro","section":"H07Z1-K Carrete","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"M35500201","catcode":null,"description":"Cable Libre de Halógenos 1x2,5mm² 750V Verde · Venta por metro","section":"H07Z1-K Carrete","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"},
+  {"code":"135100471","catcode":"10023021","description":"Cable Libre de Halógenos 1x4mm² 750V Rojo · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"135200471","catcode":"10023018","description":"Cable Libre de Halógenos 1x4mm² 750V Azul · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"135300471","catcode":"10020448","description":"Cable Libre de Halógenos 1x4mm² 750V Negro · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"135400471","catcode":"10023019-VU0301","description":"Cable Libre de Halógenos 1x4mm² 750V Blanco · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"135500471","catcode":"10023022-VU0319","description":"Cable Libre de Halógenos 1x4mm² 750V Verde · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"},
+  {"code":"135100671","catcode":"10026864-VU0402","description":"Cable Libre de Halógenos 1x6mm² 750V Rojo · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"135200671","catcode":"10026858-VU0405","description":"Cable Libre de Halógenos 1x6mm² 750V Azul · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"135300671","catcode":"10026855-VU0403","description":"Cable Libre de Halógenos 1x6mm² 750V Negro · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"135400671","catcode":"10026861-VU0401","description":"Cable Libre de Halógenos 1x6mm² 750V Blanco · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"135500671","catcode":"10026867-VU0419","description":"Cable Libre de Halógenos 1x6mm² 750V Verde · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"},
+  {"code":"35101070","catcode":"20321943","description":"Cable Libre de Halógenos 1x10mm² 750V Rojo · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_ROJO,"ficha":null,"manual":null,"colorName":"Rojo","colorHex":"#DC2626"},
+  {"code":"35201070","catcode":"20321950","description":"Cable Libre de Halógenos 1x10mm² 750V Azul · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_AZUL,"ficha":null,"manual":null,"colorName":"Azul","colorHex":"#2563EB"},
+  {"code":"35301070","catcode":"20321946","description":"Cable Libre de Halógenos 1x10mm² 750V Negro · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_NEGRO,"ficha":null,"manual":null,"colorName":"Negro","colorHex":"#111827"},
+  {"code":"35401070","catcode":"20321941","description":"Cable Libre de Halógenos 1x10mm² 750V Blanco · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_BLANCO,"ficha":null,"manual":null,"colorName":"Blanco","colorHex":"#F3F4F6"},
+  {"code":"35501070","catcode":"20321949","description":"Cable Libre de Halógenos 1x10mm² 750V Verde · Rollo 100m","section":"H07Z1-K Rollo","img":IMG_VERDE,"ficha":null,"manual":null,"colorName":"Verde","colorHex":"#16A34A"}
 ];
 let activeFilter = '';
 
